@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60">
+  <!-- Icon: Clean Lightning Bolt -->
+  <path d="M20 5 L5 30 H17 L10 55 L35 25 H22 L35 5 Z" fill="#5A3BFF" />
+
+  <!-- Text: 'sociooo' with clean spacing and alignment -->
+  <text x="50" y="38" font-family="Segoe UI, sans-serif" font-size="28" fill="#5A3BFF" font-weight="600">
+    sociooo
+  </text>
+</svg>
