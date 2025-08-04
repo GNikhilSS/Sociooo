@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Login } from './pages/Login';
+import { Layout } from './pages/Layout';
 import { Feed } from './pages/Feed';
 import { Messages } from './pages/Messages';
 import { ChatBox } from './pages/ChatBox';
@@ -8,12 +9,14 @@ import { Discover } from './pages/Discover';
 import { Profile } from './pages/Profile';
 import { CreatePost } from './pages/CreatePost';
 
+import { useUser } from '@clerk/clerk-react';
 
 const App = () => {
+  const {user} = useUser();
   return (
     <>
       <Routes>
-        <Route path="/" element={<Login />}>
+        <Route path="/" element={ !user ? <Login />: <Layout />}>
           <Route index element={<Feed />}/>
           <Route path="/messages" element={<Messages />} />
           <Route path="/messages/:userId" element={<ChatBox />} />
