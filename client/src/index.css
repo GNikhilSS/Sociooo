@@ -5,6 +5,10 @@
   font-family: "Outfit", sans-serif;
 }
 
+*::-webkit-scrollbar{
+  display: none;
+}
+
 .no-scrollbar::-webkit-scrollbar{
   display: none;
 }
